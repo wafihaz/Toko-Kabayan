@@ -6,7 +6,7 @@ use App\Http\Controllers\LoginController;
 
 // --- GUEST ROUTES (Bisa diakses tanpa login) ---
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('home');
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
