@@ -23,6 +23,12 @@
             <a href="{{ route('item.laporan') }}" class="flex-1 text-center bg-white border border-slate-200 text-slate-700 px-4 py-2.5 rounded-xl hover:bg-slate-50 transition shadow-sm text-sm font-semibold">
                 📊 Laporan
             </a>
+            <form action="{{ route('logout') }}" method="POST" class="flex-1">
+                @csrf
+                <button type="submit" class="w-full text-center bg-red-50 border border-red-100 text-red-600 px-4 py-2.5 rounded-xl hover:bg-red-100 transition shadow-sm text-sm font-bold">
+                    🚪 Keluar
+                </button>
+            </form>
         </div>
     </nav>
 
